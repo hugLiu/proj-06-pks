@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/header.css" />
+    <title>@ViewBag.Title</title>
+    <script src="~/scripts/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="http://localhost:5313/SSOToken" type="text/javascript"></script>
+    <script src="~/scripts/header.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar-nav" id="mainBanner">
+            <ul>
+                <li><a href="http://localhost:5313/">首页</a></li>
+                <li class="active"><a href="#"><span>勘探信息共享</span></a></li>
+                <li><a href="#">勘探流程</a></li>
+                <li><a href="http://127.0.0.1/PKS.KnowledgeBank/">勘探知识库</a></li>
+                <li><a href="#">勘探生产管理</a></li>
+                <li><a href="#">勘探决策支持</a></li>
+                <li><a href="#">勘探综合办公</a></li>
+                <li><a href="#">勘探社区</a></li>
+                <li><a href="#">石油百科</a></li>
+                <li><a href="#">标准规范</a></li>
+            </ul>
+        </div>
+        <div class="navbar-navsub">
+            <ul>
+                <li><a href="#">勘探情况</a></li>
+                <li class="active" style="display:none">
+                    <b>勘探动态</b>
+                    <ul class="navbar-navsub-sub">
+                        <li><a href="#" target="_self">钻井作业</a></li>
+                        <li><a href="#" target="_self">录井作业</a></li>
+                        <li><a href="#" target="_self">测井作业</a></li>
+                        <li><a href="#" target="_self">测试作业</a></li>
+                        <li><a href="#" target="_self">物探作业</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><b>项目动态</b></a></li>
+                <li><a href="#"><b>勘探决策</b></a></li>
+                <li><a href="#"><b>勘探数据成果</b></a></li>
+                <li><a href="#"><b>勘探研究成果</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="margin: 0 auto;width:1100px">
+        @RenderBody()
+    </div>
+</body>
+</html>
